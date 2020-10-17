@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html public "-//w3c//dtd xtml 1.1//EN" http://www.w3.org/TR/xhtml11/dtd/xhtml11.dtd>
+<html xml="http://www.w3.org/1999/xhtml">
+<head>
+<title>Sorting words</title>
+<script type="text/javascript">
+function TestString(str)
+{
+str=str.split(",");
+document.write("The given string is: " +str[0]+"<br/>");
+var arr=str[0].split(" ");
+arr.sort();
+if(str[1]=="descending")
+{
+arr.reverse();
+}
+document.write("the sorted word is: "+arr);
+}
+</script>
+</head> 
+<body>
+<h3>
+<script type="text/javascript"> 
+	var input_str=prompt("Enter some string here and specify ascending or descending","");
+TestString(input_str);
+</script>
+</h3>
+</body>
+</html>
